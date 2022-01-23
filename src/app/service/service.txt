@@ -1,0 +1,31 @@
+SERVICE IS A FUNCTIONALITY THAT PROVIDES US TO
+..
+FETCH DATA FROM SERVER,
+COMMUNICATING WITH SERVER,
+USER INPUT VALIDATION
+
+ACT AS MEDIATOR BTWN VIEW AND APPLICATION
+used in => [] inside .ts file
+
+DEPENDENCY INJECTION = (DEPENDENCY) that can use the SERVICE
+                        (INJECTION) passsing DEPENDENCY to dependent object  so it can used it. client don't need to build object
+
+DI 4 roles = service (that you make and need to be injected),
+             client (dependent upon service, which is component ),
+              interface (onc injected how to use service),
+               injector (responsible for injecting that object into your object)
+
+TO GENERATE SERVIR = ng generate service <path>
+
+PROMISES----are used to ensure that data will be fetched from backend server after sometiime.
+            In casse when we are using new Promise it ensures that there might be some delay while rendering
+
+-------------service.ts---------------------
+@Injectable -> helps to inject the service to the part of component (if root ,  then whole APPLICATION )
+
+function is defined to export the data when ever the finction is called from anywhere 
+
+-------------service.spec.ts------------------
+used for testing purpose
+
+*** SERVICE JUST HELPS TO SEND DATA . DATA STORED IN SHARED SECTION ***

@@ -1,0 +1,4 @@
+shared section helps to store data , array and it can be used by services to send to other parts of the components 
+
+import helps import type or class
+export shares to other parts

@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home" href="javascript:void(0)">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active" href="javascript:void(0)">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/productlist" routerLinkActive="active" href="javascript:void(0)">PRODUCT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/product2" routerLinkActive="active" href="javascript:void(0)">PRODUCT2</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/contactus" routerLinkActive="active">CONTACTUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/login" routerLinkActive="active">LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/form" routerLinkActive="active">RECATIVE FORM</a>
+          </li> 
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+          Open modal
+        </button>
+        
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  <div class="jumbostron bg-dark text-center">
+      <h1>WELCOME TO OUT WEBSITE</h1>
+      <p>
+          MADE BY ADHIRAJ PRATAP SINGH , STUDENT OF LPU UNIVERSITY.
+          I WELCOME YOU ALL ON THIS WEBPAGE BUILD FOR THE WELFARE OF EVERYONE
+      </p>
+      <div class="row">
+        <div class="col-3 a">
+            <img src='../../../assets/images/CK64vw.jpg'>
+        </div>
+        <div class="col-9">
+            <H3 class="text-center" style="padding: 5px,5px; margin: 5px;">very great you are here to <br>meet us ...........................
+                WE ARE PLEASANT TO SEE YOU
+            </H3>
+        </div>
+      </div>
+      
+  </div>
+
+  <!--  MODAL -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+       
+        <div class="modal-body">
+          <app-login></app-login>
+        </div>
+  
+      
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  

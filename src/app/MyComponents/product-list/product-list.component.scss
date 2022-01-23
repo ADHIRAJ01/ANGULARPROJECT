@@ -1,0 +1,30 @@
+.container-fluid {
+    background-color: blanchedalmond;
+    border: 2px solid blue;
+}
+.row h2{
+    border: 2px solid blue;
+}
+.product {
+    background-color: lightgreen;
+}
+.col-6 {
+    border: 5px solid blue;
+    background-color: lightpink;
+}
+img {
+    display:flexbox;
+    background-image: url('../../../assets/images/adhiraj.jpg');
+    width: 100%;
+    height: 100%;
+    ;
+    z-index: 1;
+}
+body {
+    background-color: purple;
+    z-index: 2;
+}
+.dish {
+    overflow: scroll;
+   
+}

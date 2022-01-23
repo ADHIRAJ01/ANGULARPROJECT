@@ -1,0 +1,32 @@
+<!--***************************FORM DATA BINDING NOT WORKING**********************************************-->
+  <body>
+  <h1 class="text-center" style="appearance: bold;">NORMAL ANGULAR + BOOTSTRAP LOGIN FORM</h1>
+  <div class="row text-center">
+    <p>{{ user | json }}</p>
+    <form class="was-validated">
+      <div class="row text-center a">
+        <div class="col-lg-4">
+          <input type="text" class="form-control" placeholder="Enter email" name="email" required [(ngModel)]="user.username" >   <!--required not working-->
+        </div>
+        <div class="col-lg-3">
+          <input type="password" class="form-control" placeholder="Enter password" name="pswd" [(ngModel)]="user.password" required>
+        </div>      
+        <div class="m-3">
+          <input type="number" placeholder="number">
+        </div>
+        <textarea class="form-control" row=5></textarea>
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember" [(ngModel)]="user.remember"> Remember me
+        </label>  
+        <button name="submit" action="www.google.com">SUBMIT</button>
+      </div>
+      <div class="col-3">
+        <p>hello</p>
+      </div>
+    </form>
+    
+  </div>
+  <h1>TO GO TO REACTIVE FORM CLICK BELOW</h1>
+  <button routerLink="/form" routerLinkActive="active">click</button>
+  
+</body>

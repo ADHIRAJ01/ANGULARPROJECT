@@ -1,0 +1,5 @@
+<p>form-reactive works!</p>
+<p> here {{ feedbackform | json }}</p>
+<form novalidate [formGroup]="feedbackform">
+    <input class="ng-valid" type="text" placeholder="name" required [(ngModel)]="feedbackform.firstname">
+</form>

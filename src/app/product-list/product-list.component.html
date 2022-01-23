@@ -1,0 +1,29 @@
+<body>
+<div class="container">
+  <h2>product list </h2>
+</div>
+
+<p>PRODUCT 1</p>
+
+
+<p  [id]="sayHelloId"  [style.color]="fontColor">
+  You can set my color in the component!
+</p>
+<p>
+  You can set my color in the component! Price is {{price * quantity}}
+  VARIAETY OF APPLES
+</p>
+11111
+{{person.lastName}}
+ARRAY PRACTICE {{nums[2]}}
+<div *ngFor="let name of names">
+   <h2> {{name.name + " " }}</h2>
+   <div *ngIf="name.desc">
+    <p>
+        {{ name.country }} {{ name.desc}} 
+    </p>      
+   </div>
+</div>
+<input name="myName" ng-Model="myText" required>
+<app-login></app-login>
+</body>

@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row text-center">
+        <h1>CONTACT US</h1>
+    </div>
+   
+    <div class="container">
+        <h3>SEND FEEDBACK</h3>
+        <form novalidate [formGroup]="feedbackForm">
+            <input formControlName="f_name" placeholder="name" type="text">
+            <input formControlName="l_name" placeholder="name" type="text">
+            <input formControlName="email" placeholder="email" type="email">
+            <input formControlName="tel" placeholder="telephone" type="number">
+            <textarea formControlName='message' placeholder="type your message here" type='text' style="width: 60%;"></textarea>
+            <input type="text" formControlName="agree">
+            <br>
+            <button class="bg-dark" (ngSubmit)="Submit()">SUBMIT</button>
+        </form>
+    </div>
+</div>

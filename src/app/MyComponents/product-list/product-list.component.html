@@ -1,0 +1,121 @@
+<section class='product'>>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <h2 class="col-12">PRODUCTS LIST</h2>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div *ngFor="let product of products">
+                    <h2> Name is {{product.name}}  </h2>
+                    <h1>
+                    <a [title]="product.name">{{product.name}}</a>
+                    </h1>
+                    <div *ngIf="product.desc">
+                        <p>{{product.desc}}</p>
+                    </div>
+                    
+                    <button (click)="show()" [title]="'click here for function'">
+                    SHARE
+                    </button>
+                    </div>
+            </div>
+            <div class="col-6">
+                <div class="container-fluid">
+                    <H1>WELCOME HERE</H1>
+                    <div class="row">>
+                    
+                        <div *ngFor="let product of products">
+                            <div class="col-4">
+                        
+                                <h3>
+                                    <a
+                                    [title]="product.name + ' details'"
+                                    [routerLink]="['/products', product.id]">
+                                    {{ product.name }}
+                                    </a>
+                                </h3>
+                        </div>
+                        
+                    
+                        <!-- . . . -->
+                    
+                    </div>
+                    
+                    
+                    </div>
+                    
+                    
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="dish">
+    <div class="container-fluid">
+        <div class="row col-12  col-sm-12 text-center">
+            <H2 style="position: -webkit-sticky;">DISHES ARE ... </H2>
+        </div>
+        <div class="row">
+            
+            <div *ngFor="let dish of dishes" [routerLink]="['/dishdetail',dish.id]" >              <!-- removing this ==> (click)="onSelect(dish)-- it was sending and dislaying dish below -->
+                <div class="col-6">                                                                 <!-- [[routerLink] = is used to passt the parameters inside it, here we passed as an array to the routelink  -->
+                    <div class="row">
+                    
+                        <div class="col-4">
+                            <img src = {{dish.image}} alt={{dish.name}}>
+                        </div>
+                        
+                    
+                        <div class="col-8">
+                            <h1>FOOD TYPE : {{dish.category}}</h1>
+                            <div *ngIf="dish.description">
+                                <p>DESCRIPTION = {{dish.description}}</p>
+                            </div>
+                            <div *ngIf = "dish.comments">
+                                <H3>COMMENTS </H3>
+                                <div *ngFor="let x of dish.comments">
+                                    <H5>RATING BY USER: {{x.rating}}</H5>
+                                    <H5>COMMENT BY USER: {{x.comment}}</H5>
+                                    <H5>AUTHOR BY USER:  {{x.author}}</H5>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                            <button (click)="goNext()">next</button>
+                        </div>
+                     </div>
+               
+               
+               
+               
+                 </div>
+            </div>
+            
+       
+        
+        <!--PREVIOUSLY WE WERE RENDERING DISH HERE ON CLICK using onclick function
+            NOW WE HAVE PASSED IT TO OTHER COMPONENT
+
+            <div class="col-6 col-sm-12" style="background-color: aqua;">
+            <div *ngIf="selectDish">
+                <div class="card" style="width: 50%, text-center">
+                    <img src={{selectDish.image}} class="card-img-top" alt="selectDish.name" style="background: green;width: 50%;">
+                    <div class="card-body">
+                      <h5 class="card-title">{{selectDish.name}}</h5>
+                      <p class="card-text">{{selectDish.description}}</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        -->
+        </div>
+        
+            
+            
+    </div>
+</section>

@@ -1,0 +1,47 @@
+<p>home works
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <H1 class="text-center">HOME PAGE</H1>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-sm-12 col-md-12" style="margin: bordwe5px;">
+            <div *ngIf="dish">
+                <div class="card" style="width: 400px;">
+                    <div class="card-img-top">
+                        <img src={{dish.image}} style="height: 300px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-12">
+            <div *ngIf="promo">
+                <div class="card" style="width: 400px;">
+                    <div class="card-img-top">
+                        <img src={{promo.image}}  style="height: 300px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    
+</div>
+
+<!--
+
+id: 1,
+name: "CARRIBEAN SAUCE",
+image: "../../assets/images/certificate.png",
+category: "INDIAN",
+price: 40,
+label: "VEG",
+description: "SWEET",
+featured: true,
+comments : [
+    {
+        rating: 5,
+        comment: 'unique',
+        author:'Adhiraj'
+    }
+-->
